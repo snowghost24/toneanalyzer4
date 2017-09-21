@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tone Analyzer Project - The J Team</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+
+    <style>
+        .chartSection {
+            max-width: 42%;
+            margin-left: 4em;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="container">
+
+            <div class="jumbotron">
+                <h1 class="display-3"><strong>Mood Reader</strong></h1>
+                <hr class="my-4">
+                <h1>The analyzer that knows your tone.</h1>
+            </div>
+    </center>
+
+    <!-- this is the log in form -->
+    <div class="container">
+        <p class="sectionTitle">Please enter your email and password</p>
+        <input type="text" id="txtEmail" placeholder="email">
+        <input type="password" id="txtPassword" placeholder="password"><br><br>
+        <button id="btnLogin" class="btn btn-success">Log In</button>
+        <button id="btnSignup" class="btn btn-primary">Sign Up</button>
+        <button id="btnLogout" class="btn btn-secondary hide">Log out</button>
+    </div>
+    <br>
+
+    <div class="container">
+        <form id='form' method='post'>
+            <div class="form-group">
+                <label for="comment" class="sectionTitle">Please enter the text to analyze.</label>
+                <textarea class="form-control" rows="6" id="comment"></textarea>
+            </div>
+            <button type='submit' class="button1 btn-primary btn" id='submit'>Submit</button>
+            <button type='clear' class="button2 btn btn-danger" id='clear'>Clear</button><br><br>
+            <!-- <button type='copy' class="button3" class="btn-sm btn-secondary" id='copy'>Copy</button> -->
+    </div>
+    </div>
+    </form>
+    <div class="container">
+        <div class="grammar">
+        </div>
+    </div>
+    <div class="container">
+        <br>
+        <div class="synAnt">
+            <label class="sectionTitle" for="synIn">Please enter a word to search for synonyms</label><br>
+            <input type="text" id="synIn"><br><br>
+            <input type="submit" id="sub2" class="btn-primary btn"><br><br>
+        </div>
+    </div>
+
+ 
+    <!-- <br><br><br>
+    
+        <div class='emotions row'>
+    
+            <h1>Tone Definitons </h1>
+            <strong>
+            <h3 class="col-xl-12">
+                <strong>Anger</strong>: Evoked due to injustice, conflict, humiliation, negligence or betrayal. If anger is active, the individual attacks
+                the target, verbally or physically. If anger is passive, the person silently sulks and feels tension and hostility.
+            </h3>
+            
+            <h3 class="col">
+                <strong>Disgust</strong>: An emotional response of revulsion to something considered offensive or unpleasant. It is a sensation that refers
+                to something revolting.
+            </h3>
+           
+            <p class="col">
+                <strong>Fear </strong>: A response to impending danger. It is a survival mechanism that is a reaction to some negative stimulus. It may be
+                a mild caution or an extreme phobia.
+            </p>
+            
+            <p class="col">
+                <strong>Joy</strong>: Joy or happiness has shades of enjoyment, satisfaction and pleasure. There is a sense of well-being, inner peace, love,
+                safety and contentment.
+            </p>
+            
+            <p class="col">
+                <strong>Sadness</strong>: Indicates a feeling of loss and disadvantage. When a person can be observed to be quiet, less energetic and withdrawn,
+                it may be inferred that sadness exists.
+            </p>
+    
+            </strong>
+        </div>
+    
+        <br><br><br> -->
+
+    <div class="row">
+        <div class="col chartSection">
+                
+            <canvas id="myChart" width="400" height="400"></canvas>
+
+        </div>
+
+        <div class="col chartSection">
+            <canvas id="myChart2" width="400" height="400"></canvas>
+        </div>
+    </div>
+
+    <div class="pastDiv">
+        <h1 class="pastText">Search History</h1>
+        <div id="prevSearch">
+
+        </div>
+        <div class="history">
+                <div class="row">
+                        <div class="col chartSection2">
+                                
+                            
+                
+                        </div>
+                
+                        <div class="col chartSection3">
+                            
+                        </div>
+                    </div>
+        </div>
+    </div>
+
+
+
+    </div>
+
+    <center>
+        <footer class="footerA">
+            <h3 class="footerB">&copy 2017 <img src='assets/images/j-team-logo.png' height=100 0px></h3>
+        </footer>
+    </center>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
+    <script type="text/javascript " src="assets/javascript/script.js "></script>
+
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+.jumbotron {
+    margin-bottom: 0px;
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-shadow: 2px 2px red, 4px 4px orange, 6px 6px yellow, 8px 8px green, 10px 10px blue, 12px 12px purple;
+    text-shadow: 2px 2px black;
+    color: white;
+    background: lightblue;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+body {
+    background: lightblue;
+}
+
+.chartSection {
+    max-width: 42%;
+    margin-left: 4em;
+}
+
+.footerA {
+    color: white;
+}
+
+.footerB {
+    font-family: 'Black Ops One', cursive;
+}
+
+.container {
+    background-color: lightblue;
+}
+
+.sectionTitle {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 25px;
+}
+
+.grammar {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 19px;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.theSynonyms {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 19px;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.emotions {
+    max-width: 30%;
+    max-height: 10%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-left: 30%;
+    font-size: 105%;
+}
+
+.pastText {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 70px;
+    color: white;
+    text-shadow: 1px 1px black;
+    text-align: center;
+    border-bottom: 1px solid white;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+.history{
+    max-width: 80%;
+    margin-left: 6em;
+}
+.chartSection2 {
+    max-width: 50%;
+    
+}
+
+.chartSection3{
+max-width: 50%;
+}

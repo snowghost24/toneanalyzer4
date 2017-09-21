@@ -1,0 +1,27 @@
+{
+  "name": "app.js",
+  "version": "1.0.0",
+  "description": "ToneAnalyzer",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jasonnavarro86/ToneAnalyzer_Project.git"
+  },
+  "author": "The J Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jasonnavarro86/ToneAnalyzer_Project/issues"
+  },
+  "homepage": "https://github.com/Jasonnavarro86/ToneAnalyzer_Project#readme",
+  "dependencies": {
+    "body-parser": "*",
+    "chart.js": "^2.7.0",
+    "ejs": "*",
+    "express": "*",
+    "watson-developer-cloud": "^2.39.0",
+    "yoda-speak": "^0.1.1"
+  }
+}
